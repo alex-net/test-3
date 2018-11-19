@@ -16,6 +16,7 @@ $operset=['added'=>'Добавлена','killed'=>'Удалена'];
 <body>
 	<div class="content">
 		<h2>Лог</h2>	
+		<?php if($q):?>
 		<table border="1">
 			<tr><th>Дата</th><th>Ip</th><th>Операция</th></tr>
 			<?php foreach($q as $v):?>
@@ -25,6 +26,7 @@ $operset=['added'=>'Добавлена','killed'=>'Удалена'];
 					<td><?=$operset[$v['action']];?></td></tr>
 			<?php endforeach;?>
 		</table>
+		<?php endif;?>
 	</div>
 </body>
 </html>
