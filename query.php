@@ -4,7 +4,7 @@ if (empty($_POST['query']))
 	exit;
 
 $ret=['s'=>'ok'];
-include ('db.log');
+include ('db.php');
 
 
 if ($ret['s']=='ok')
